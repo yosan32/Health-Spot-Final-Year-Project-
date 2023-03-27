@@ -195,7 +195,8 @@ class _AppointmentState extends State<Appointment> {
                                                                         index]
                                                                     .trainer_id),
                                                       ));
-                                                    } else if (_role == '3') {
+                                                    }
+                                                    else if (_role == '3') {
                                                       Navigator.of(context).push(
                                                           new MaterialPageRoute(
                                                         builder: (BuildContext

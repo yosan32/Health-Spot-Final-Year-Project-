@@ -139,6 +139,14 @@ class _ChatPageState extends State<ChatPage> {
 
     super.initState();
   }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    socket.dispose();
+    _scrollController.dispose();
+
+      super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -222,18 +230,20 @@ class _ChatPageState extends State<ChatPage> {
                             String message = _messageController.text.trim();
                             print(widget.username);
                             print(widget.receiver);
-                            socket.emit(
-                                "message",
-                                ChatModel(
-                                        id: socket.id,
-                                        message: message,
-                                        username: widget.username,
-                                        receiver: widget.receiver,
-                                        sentAt: DateTime.now()
-                                            .toLocal()
-                                            .toString()
-                                            .substring(0, 16))
-                                    .toJson());
+                            if (mounted) {
+                              socket.emit(
+                                  "message",
+                                  ChatModel(
+                                          id: socket.id,
+                                          message: message,
+                                          username: widget.username,
+                                          receiver: widget.receiver,
+                                          sentAt: DateTime.now()
+                                              .toLocal()
+                                              .toString()
+                                              .substring(0, 16))
+                                      .toJson());
+                            }
 
                             _messageController.clear();
                           }
