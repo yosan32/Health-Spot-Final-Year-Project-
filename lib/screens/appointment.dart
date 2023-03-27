@@ -214,6 +214,7 @@ class _AppointmentState extends State<Appointment> {
                                                     }
                                                   },
                                                   icon: Icon(Icons.chat,
+
                                                       color: Colors.purple),
                                                   label: Text("Chat"),
                                                 )
