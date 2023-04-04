@@ -18,7 +18,7 @@ final Map<String, Map<String, dynamic>> articlesCards = {
   "Content": {
     "title": "View blood bank",
     "image":
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPfvwbp4Zd9ai4CRWNh7LCmqcb0OuuiemfTw&usqp=CAU",
+        "https://www.hopkinsmedicine.org/-/media/images/health/2_-treatment/pathology/blood-banking-teaser.ashx",
   }
 };
 

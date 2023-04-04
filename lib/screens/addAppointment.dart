@@ -152,8 +152,8 @@ class _AddAppointmentState extends State<AddAppointment> {
                                             var dates = await showDatePicker(
                                                 context: context,
                                                 initialDate: DateTime.now(),
-                                                firstDate: DateTime(1900),
-                                                lastDate: DateTime(2100));
+                                                firstDate: DateTime(2023),
+                                                lastDate: DateTime(2024));
                                             date.text = dates
                                                 .toString()
                                                 .substring(0, 10);

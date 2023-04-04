@@ -18,7 +18,7 @@ final Map<String, Map<String, dynamic>> articlesCards = {
   "Content": {
     "title": "View hospital",
     "image":
-        "https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9zcGl0YWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3wcxEXlLlSNrimm5wsp74rrJOhaPU51FlD6seLhZbkU0fGSAxow0K_WRFiGGfx4ZgyA&usqp=CAU",
   }
 };
 
