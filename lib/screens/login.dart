@@ -34,7 +34,7 @@ class _LoginState extends State<Login> {
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage("assets/imgs/register-bg.jpg"),
+                      image: AssetImage("assets/imgs/register-bg.png"),
                       fit: BoxFit.cover)),
             ),
             SafeArea(
