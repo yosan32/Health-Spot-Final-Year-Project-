@@ -78,10 +78,4 @@ class CallApi {
     var token = localStorage.getString('token');
     return token;
   }
-
-  _getUser() async {
-    SharedPreferences localStorage = await SharedPreferences.getInstance();
-    var user = localStorage.getString('user');
-    return json.decode(user);
-  }
 }

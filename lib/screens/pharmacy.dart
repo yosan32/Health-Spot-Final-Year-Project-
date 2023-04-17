@@ -193,7 +193,7 @@ class _PharmacyState extends State<Pharmacy> {
                                                           localStorage
                                                               .getString(
                                                                   'token');
-                                                      data.removeAt(index);
+
                                                       await CallApi()
                                                           .deleteData(
                                                               'pharmacies/' +

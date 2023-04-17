@@ -28,11 +28,14 @@ class _EditPharmacyState extends State<EditPharmacy> {
   @override
   void initState() {
     super.initState();
-    name = new TextEditingController(text: widget.list[widget.index].name);
-    contact =
-        new TextEditingController(text: widget.list[widget.index].contact);
-    location =
-        new TextEditingController(text: widget.list[widget.index].location);
+    if (widget.list.isNotEmpty) {
+      name = TextEditingController(text: widget.list[widget.index].name);
+      contact = TextEditingController(text: widget.list[widget.index].contact);
+      location =
+          TextEditingController(text: widget.list[widget.index].location);
+    } else {
+      // Handle the case where widget.list is empty
+    }
   }
 
   @override
